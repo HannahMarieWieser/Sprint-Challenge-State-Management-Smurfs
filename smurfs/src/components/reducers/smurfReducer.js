@@ -1,10 +1,10 @@
 import{
     FETCH_SMURF_DATA_START,
     FETCH_SMURF_DATA_SUCCESS,
-} from'./actions'
+} from'../actions'
 
 const initialState = {
-    missions : [],
+    smurfs : [],
     isLoading : false,
     error: ''
 }
@@ -21,8 +21,8 @@ export const reducer = (state = initialState, action) => {
         case FETCH_SMURF_DATA_SUCCESS:
             return{
                 ...state,
-                isLoading:false,
-                missions: action.payload,
+                isLoading: false,
+                smurfs: action.payload,
                 error: ''
             }
         default:

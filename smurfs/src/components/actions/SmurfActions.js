@@ -10,7 +10,7 @@ export const getData = () => {
         axios
             .get('http://localhost:3333/smurfs')
             .then(res => {
-                console.log(res)
+                console.log('res', res)
                 dispatch({type: FETCH_SMURF_DATA_SUCCESS, payload:res.data})
             })
             .catch(err => {

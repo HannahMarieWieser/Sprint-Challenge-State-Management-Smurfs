@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import Loader from 'react-loader-spinner'
 import Smurf from './Smurf'
-import {getData} from './actions.index'
+import {getData} from '../actions/index'
 
 const SmurfList = props=>{
     console.log('smurf props', props)
@@ -11,7 +11,7 @@ const SmurfList = props=>{
             <h1>Smurf App</h1>
             <button onClick={props.getData}>
                 {props.isLoading ? (
-                    <Loader type="Circles" color="#FF0000" height="50" width="100" /> 
+                    <Loader type="Circles" color="#FF0000" height="50" width='100' /> 
                 ):(
                     'Get Smurfs'
                 )}
@@ -26,7 +26,7 @@ const SmurfList = props=>{
 const mapStateToProps = state => {
     return{
         isLoading : state.isLoading,
-        missions : state.missions
+        smurfs : state.smurfs
     }
 }
 
