@@ -8,7 +8,7 @@ const SmurfList = props=>{
     console.log('smurf props', props)
     return(
         <>
-            <h1>Smurf App</h1>
+            <h1>Smurf Villagers App</h1>
             <button onClick={props.getData}>
                 {props.isLoading ? (
                     <Loader type="Circles" color="#FF0000" height="50" width='100' /> 
