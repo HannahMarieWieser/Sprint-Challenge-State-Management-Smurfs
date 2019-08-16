@@ -8,10 +8,10 @@ const Smurf = props => {
             <Card.Content>
             <Card.Header> {props.smurf.name}</Card.Header>
             <Card.Meta>
-                <span className='date'>Age: {props.smurf.age}</span>
+                <span className='date'>Age: {props.smurf.age} years</span>
             </Card.Meta>
             <Card.Meta>
-                <span className='date'>Height: {props.smurf.height}</span>
+                <span className='date'>Height: {props.smurf.height} cm</span>
             </Card.Meta>
             </Card.Content>
        </Card>
